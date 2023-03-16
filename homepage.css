@@ -1,3 +1,31 @@
 body {
-    background-color: aqua;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+} 
+
+.navsize {
+    height: 100px;
+}
+
+.pad {
+    padding-left: 50px;
+    padding-right: 100px;
+    width: 500px;
+}
+
+.imge {
+    border-radius: 3px;
+}
+
+.wimage {
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+img {
+    border-radius: 100px;
+}
+
+.navtxt {
+    color: black;
 }
