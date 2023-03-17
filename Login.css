@@ -11,10 +11,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #64EEFA, #3DBDFF);;
+    /*background: linear-gradient(to right, #64EEFA, #3DBDFF);*/
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .container {
+    
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -38,6 +41,7 @@ body {
 .container form input {
     font-weight: lighter;
     border: none;
+    width: 300px;
 }
 
 input:focus {
@@ -96,7 +100,8 @@ input:focus {
     border-radius: 0.4rem;
     cursor: pointer;
     padding: 0.7rem 0.8rem;
-    background: linear-gradient(to right, #64EEFA, #3DBDFF);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     margin-top: 2rem;
     margin-bottom: 3rem;
     color: white;
