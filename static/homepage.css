@@ -5,8 +5,12 @@ body {
     justify-content: center;
     align-items: center;
 } 
+
+
 .navsize {
     height: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .form-control {
@@ -56,5 +60,10 @@ img {
 }
 
 .imageMain{
-    padding-left: 35px;
+    display: flex;
+    justify-content: center;
+    /* align-content: space-between; */
+    /* padding-left: 35px; */
+    align-items: center;
 }
+

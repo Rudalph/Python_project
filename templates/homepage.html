@@ -16,33 +16,42 @@
                 <a class="navbar-brand" href="#">
                   <h1>WEATHER SERVICE</h1>
               </a>
-                <!-- <ul class="nav justify-content-center space-evenly">
+                <ul class="nav justify-content-center space-evenly">
                     <li class="nav-item">
-                        <a class="nav-link active navtxt" aria-current="page" href="#">ABOUT</a>
+                        <a class="nav-link active navtxt" aria-current="page" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navtxt" href="#">FEEDBACK</a>
+                        <a class="nav-link navtxt" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navtxt" href="#">HELPLINE</a>
+                        <a class="nav-link navtxt" href="#"></a>
                     </li>
-                </ul> -->
+                </ul>
             </a>
         </div>
     </nav>
     <br><br><br>
     </div>
-    <div class="imageMain">
-        <img src="{{ weather_icon }}" alt="weather image" width="90" height="80">
-    </div>
+    
     <div class="searchBar">
-        <form class="d-flex justify-content-end" method="POST">
+
+        <form class="d-flex justify-content-center" method="POST">
             <div class="input-group mb-3 pad">
                 <input type="text" class="form-control" aria-label="Text input with dropdown button" name="city" placeholder="Enter your city">
                 <button type="submit" class="btn btn-outline-secondary">SEARCH</button>
             </div>
         </form>
     </div>
+   <div>
+    <div class="imageMain">
+      <img src="{{ weather_icon }}" alt="weather image" width="90" height="80">
+
+      <div class="txtbesideimage"></div>
+      <h5>temperature</h5>
+      </div>
+      
+  </div>
+ 
 
     {% if weather %}
     <br>
