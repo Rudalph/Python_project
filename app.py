@@ -1,11 +1,17 @@
 from flask import Flask, render_template, request
 import requests
-
+import os
 app = Flask(__name__)
+
+picFolder = os.path.join('static', 'images')
+print(picFolder)
+app.config['UPLOAD_FOLDER'] = picFolder
 
 @app.route('/')
 def index():
-    return render_template('homepage.html')
+    # return render_template('homepage.html')
+    pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'profilePic.png')
+    return render_template("homepage.html", user_image=pic1)  
 
 @app.route('/', methods=['POST'])
 def get_weather():
