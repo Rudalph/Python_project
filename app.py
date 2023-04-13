@@ -11,7 +11,8 @@ app.config['UPLOAD_FOLDER'] = picFolder
 def index():
     # return render_template('homepage.html')
     pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'profilePic.png')
-    return render_template("homepage.html", user_image=pic1)  
+    pic2 = os.path.join(app.config['UPLOAD_FOLDER'], 'clouds.png')
+    return render_template("homepage.html", user_image=pic1,weather_icon=pic2)  
 
 @app.route('/', methods=['POST'])
 def get_weather():
@@ -25,7 +26,9 @@ def get_weather():
         'wind_speed': response['wind']['speed'],
         'icon': response['weather'][0]['icon']
     }
-    return render_template('homepage.html', weather=weather)
+    pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'profilePic.png')
+    pic2 = os.path.join(app.config['UPLOAD_FOLDER'], 'clouds.png')
+    return render_template('homepage.html', weather=weather, user_image=pic1,weather_icon=pic2)
 
 if __name__ == '__main__':
     app.run(debug=True)
