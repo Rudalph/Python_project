@@ -1,17 +1,42 @@
 body {
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: 'Barlow', sans-serif;
+    justify-content: center;
+    align-items: center;
 } 
-
 .navsize {
     height: 100px;
 }
 
+.form-control {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f7f7f7;
+    box-shadow: none;
+  }
+.searchBar{
+    align-items: center;
+    justify-content: center;
+}
 .pad {
     padding-left: 50px;
     padding-right: 100px;
     width: 500px;
 }
+
+.btn-outline-secondary {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f7f7f7;
+    box-shadow: none;
+    border: none;
+  }
 
 .imge {
     border-radius: 3px;
@@ -28,4 +53,8 @@ img {
 
 .navtxt {
     color: black;
+}
+
+.imageMain{
+    padding-left: 35px;
 }
