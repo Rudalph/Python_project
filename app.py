@@ -20,8 +20,8 @@ def get_weather():
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=54a4215d65eb60a2a0c49c14c289a227&units=metric'
     response = requests.get(url).json()
     weather = {
-        'temperature': response['main']['temp'],
-        'description': response['weather'][0]['description'],
+        'temperature': round(response['main']['temp']),
+        'description': response['weather'][0]['description'].capitalize(),
         'wind_speed': response['wind']['speed'],
         'feels': response['main']['feels_like'],
         'name': response['name'],
