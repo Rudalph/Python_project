@@ -56,7 +56,6 @@
         <div class="textSub">Feels like: {{ weather.feels}}</div>
         <div class="textSub">{{ weather.description }}</div>
         <div class="textSub">City:{{ weather.name}}</div>
-        
     </div>
     </div>
     <br>
@@ -75,7 +74,30 @@
                         <tr>
                             <td>{{ weather.visibility }} m</td>
                             <td>{{ weather.humidity }} g/m<sup>3</sup></td>
-                            <td>{{ weather.wind_speed }} km/h</td>
+                            <td>{{ weather.wind_speed }} m/s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">PRESSURE</th>
+                            <th scope="col">MIN TEMPERATURE</th>
+                            <th scope="col">MAX TEMPERATURE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ weather.pressure }} mbar</td>
+                            <td>{{ weather.temp_min }} °C</td>
+                            <td>{{ weather.temp_max }} °C</td>
                         </tr>
                     </tbody>
                 </table>
