@@ -60,10 +60,10 @@ img {
 }
 
 .imageMain{
-    display: flex;
+    display: flexbox;
+    flex-direction: column;
     justify-content: center;
-    /* align-content: space-between; */
-    /* padding-left: 35px; */
     align-items: center;
+   padding-left: 690px;
 }
 
