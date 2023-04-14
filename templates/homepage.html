@@ -43,19 +43,20 @@
         </form>
     </div>
    <div>
-    <div class="imageMain">
-      <img src="{{ weather_icon }}" alt="weather image" width="90" height="80">
-
-      <!-- <div class="txtbesideimage"></div> -->
-      <h5>temperature</h5>
-      <h5>temperature</h5>
-      <h5>temperature</h5>
-      <!-- </div> -->
-      
-  </div>
+    
  
 
     {% if weather %}
+    <div class="imageMain">
+        <img src="{{ weather_icon }}" alt="weather image" width="90" height="80">
+  
+        <!-- <div class="txtbesideimage"></div> -->
+        <h5>{{ weather.temperature }}°C</h5>
+        <h5>{{ weather.description }}</h5>
+        <h5>Wind Speed:{{ weather.wind_speed }}m/s</h5>
+        <!-- </div> -->
+        
+    </div>
     <br>
     <div class="container text-center">
         <div class="row">
