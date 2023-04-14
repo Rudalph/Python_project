@@ -4,6 +4,7 @@ body {
     font-family: 'Barlow', sans-serif;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 } 
 
 
@@ -42,28 +43,50 @@ body {
     border: none;
   }
 
-.imge {
+/* .imge {
     border-radius: 3px;
 }
 
 .wimage {
     margin-top: -10px;
     margin-right: 20px;
-}
+} */
 
-img {
+/* img {
     border-radius: 100px;
-}
+} */
 
 .navtxt {
     color: black;
 }
 
-.imageMain{
+/* .imageMain{
     display: flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
    padding-left: 730px;
+} */
+
+.mainContent{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
 }
 
+.imageMain{
+    display: flex;
+}
+
+.textMain{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textDegree{
+    font-weight: 700;
+    font-size: larger;
+}
