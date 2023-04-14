@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-    <title>Python Project</title>
+    <title>weather.io</title>
 </head>
 <body>
   
@@ -14,7 +14,7 @@
             <a class="navbar-brand" href="#">
                 <img src="{{ user_image }}" alt="Bootstrap" width="90" height="80">
                 <a class="navbar-brand" href="#">
-                  <h1>WEATHER SERVICE</h1>
+                  <h1>weather.io</h1>
               </a>
                 <ul class="nav justify-content-center space-evenly">
                     <li class="nav-item">
@@ -53,9 +53,9 @@
     </div>
     <div class="textMain">
         <div class="textDegree">{{ weather.temperature }}°C</div>
-        <div class="textSub">Feels like:</div>
+        <div class="textSub">Feels like: {{ weather.feels}}</div>
         <div class="textSub">{{ weather.description }}</div>
-        <div class="textSub">City:</div>
+        <div class="textSub">City:{{ weather.name}}</div>
         
     </div>
     </div>
@@ -73,8 +73,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{{ weather.temperature }} &deg;C</td>
-                            <td>{{ weather.description }}</td>
+                            <td>{{ weather.visibility }} m</td>
+                            <td>{{ weather.humidity }} g/m<sup>3</sup></td>
                             <td>{{ weather.wind_speed }} km/h</td>
                         </tr>
                     </tbody>

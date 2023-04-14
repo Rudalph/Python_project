@@ -20,11 +20,13 @@ def get_weather():
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=54a4215d65eb60a2a0c49c14c289a227&units=metric'
     response = requests.get(url).json()
     weather = {
-        'city': city,
         'temperature': response['main']['temp'],
         'description': response['weather'][0]['description'],
         'wind_speed': response['wind']['speed'],
-        'icon': response['weather'][0]['icon']
+        'feels': response['main']['feels_like'],
+        'name': response['name'],
+        'visibility': response['visibility'],
+        'humidity': response['main']['humidity']
     }
     pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'mainGlobeC.png')
     pic2 = os.path.join(app.config['UPLOAD_FOLDER'], 'sun.png')
