@@ -4,14 +4,12 @@ import os
 app = Flask(__name__)
 
 picFolder = os.path.join('static', 'images')
-print(picFolder)
 app.config['UPLOAD_FOLDER'] = picFolder
 
 @app.route('/')
 def index():
     pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'mainGlobeC.png')
-    pic2 = os.path.join(app.config['UPLOAD_FOLDER'], 'sun.png')
-    return render_template("homepage.html", user_image=pic1,weather_icon=pic2)  
+    return render_template("homepage.html", user_image=pic1)  
 
 @app.route('/', methods=['POST'])
 def get_weather():
